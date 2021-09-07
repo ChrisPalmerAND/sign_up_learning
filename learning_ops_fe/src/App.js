@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Heading } from './components/atoms/heading';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         >
           Learn React
         </a>
+        <Heading text="Hi" color="red"/>
       </header>
     </div>
   );
