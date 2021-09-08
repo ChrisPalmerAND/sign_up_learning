@@ -17,9 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "y": "yarn",
     "gp": "git push -u origin main",
     "gc": "git commit -m "
+  
   },
   "eslintConfig": {
     "extends": [
