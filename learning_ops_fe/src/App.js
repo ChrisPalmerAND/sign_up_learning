@@ -1,17 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Heading } from './components/atoms/heading';
-import { Title } from './components/atoms/title';
-import { Paragraph } from './components/atoms/paragraph';
+
+// import {Session} from './components/modules/session';
+import { Card } from './components/organisms/card';
+
+
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Heading text="Hi" color="red"/>
-        <Title text="First meeting" color="white" />
-        <Paragraph text="The first meeting will be about colonising Mars." />
+        <Card/>
       </header>
     </div>
   );
