@@ -21,16 +21,21 @@ export const Session = () => {
         try {
           const response = await axios.get('http://127.0.0.1:8000/sessions/');
           console.log(response);
+          return response;
         } catch (error) {
           console.error(error);
         }
       }
-    getSession();
-    const allSessions = sessions.map((session, index) => {
+      //  do I need to call this? look at the other await functions first.
+      
+    const data = getSession();
+    console.log(data);
+    // this fails because it tries to run an empty array. 
+    const allSessions = sessions.map((data, index) => {
         return(
             <div key={index}>
-            <Title text={session.title}/>
-            <Paragraph text={session.description} />
+            <Title text={data.title}/>
+            <Paragraph text={data.description} />
             </div>
             )
         })
