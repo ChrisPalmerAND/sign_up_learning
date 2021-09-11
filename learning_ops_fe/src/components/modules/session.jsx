@@ -19,7 +19,7 @@ const sessions = [{
 export const Session = () => {
     async function getSession() {
         try {
-          const response = await axios.get('https://8000-indigo-butterfly-sb395luj.ws-eu16.gitpod.io/sessions');
+          const response = await axios.get('http://127.0.0.1:8000/sessions/');
           console.log(response);
         } catch (error) {
           console.error(error);
